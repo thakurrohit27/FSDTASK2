@@ -1,0 +1,36 @@
+.board {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border:1px solid black;
+    box-sizing:border-box;
+}
+.board:before {
+    content:"";
+    display: block;
+    color: black;
+    padding-top: 100%;
+}
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.line {
+    overflow: auto;
+}
+.cell {
+    float: left;
+    width: 33.3333%;
+    border:1px solid black;
+    font-size: large;
+    box-sizing:border-box;
+}
+.cell:before {
+    content:"";
+    display: block;
+    background-color: forestgreen;
+    padding-top: 100%;
+}
